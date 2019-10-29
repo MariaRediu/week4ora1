@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{482175B4-13D3-40C2-B7E8-99751A146575}</ProjectGuid>
+    <ProjectGuid>{BCEE8BE1-523B-44D4-9B2B-429D3A6D6459}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Week4Ora1</RootNamespace>
-    <AssemblyName>Week4Ora1</AssemblyName>
+    <RootNamespace>Exercitiu1</RootNamespace>
+    <AssemblyName>Exercitiu1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Author.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\StudentProject\StudentProject.csproj">
-      <Project>{6773f759-7eb4-406b-a9b2-d192ff791d42}</Project>
-      <Name>StudentProject</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
