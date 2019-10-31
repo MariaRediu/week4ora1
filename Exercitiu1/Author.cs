@@ -16,7 +16,7 @@ namespace Exercitiu1
 
         public void Print()
         {
-            Console.WriteLine(($"Nume={this.Nume} Email={this.Email} Country={this.Country}");
+            Console.WriteLine($"Nume={this.Nume} Email={this.Email} Country={this.Country}");
         }
            
     }
