@@ -36,16 +36,16 @@ namespace Exercitiu5
             topping2.Cost = 20;
 
             PizzaTopping topping3 = new PizzaTopping();
-             topping3.Name = "Vegetable";
+            topping3.Name = "Vegetable";
             top.Add(topping3);
             topping3.Cost = 40;
-            Console.WriteLine("Toppings:\n");
-
+            Console.WriteLine("Toppings:");
             foreach (var item in top)
             {
-                Console.WriteLine($"{item.Name} (${item.Cost}) ");
+                Console.WriteLine($"\b\b\b {item.Name} (${item.Cost}) ");
 
             }
+            Console.WriteLine($"Total cost: $ {topping1.Cost+topping2.Cost+topping3.Cost}");
 
             Console.ReadLine();
 

@@ -13,8 +13,6 @@ namespace Exercitiu5
         public void Print()
         {
             Console.WriteLine($"Toppings ={this.Name}- ({this.Cost})");
-
-            Console.ReadLine();
         }
        
     }

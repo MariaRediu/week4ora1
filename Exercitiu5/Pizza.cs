@@ -9,6 +9,7 @@ namespace Exercitiu5
    public class Pizza
     {
         public string Name { get; set; }
+
        // public List<PizzaTopping> toppings { get; set; }
 
         public PizzaBase PizzaBase { get; set; }
