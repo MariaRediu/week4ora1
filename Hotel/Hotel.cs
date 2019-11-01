@@ -8,17 +8,28 @@ namespace Hotel
 {
    public class Hotel
     {
-
         public string Name { get; set; }
         public string City { get; set; }
-        public Room ListOfRoom { get; set; }
+        public List <Room>  ListOfRoom { get; set; }
+        public int Stars { get; set; }
 
-        public void GetPriceForNumberOfRooms(int numberOfRooms)
+        /* public string Print() {
+             string array = "";
+             foreach (var cam in ListOfRoom)
+             {
+                 array += $"{cam.Print()}\r\n";
+             }
+             return 
+             Console.WriteLine(($"Name={this.Name} City={this.City}  Stars= {this.Stars} -\r\n{array.ToString()} ");
+         }*/
+        public string Print()
         {
-            Console.WriteLine($"Pentru numarul de camere {numberOfRooms} pretul este { GetPriceForDays()* numberOfRooms }");
-        }
-        public void Print() {
-            Console.WriteLine(($"Name={this.Name} City={this.City} List={this.ListOfRoom} ");
+            string sir = "";
+            foreach (var item in ListOfRoom)
+            {
+                sir += $"{item.Print()}\r\n";
+            }
+            return $"Hotel:{Name} - Oras {City} -  Stele {Stars}-\r\n{sir.ToString()}";
         }
     }
 }

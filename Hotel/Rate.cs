@@ -11,9 +11,9 @@ namespace Hotel
         public decimal Amount { get; set; }
         public string Currency { get; set; }
 
-        public void Print()
+        public string Print
         {
-            Console.WriteLine($"Amount={this.Amount} Currency={this.Currency} ");
+            get { return $"Rate:{Amount} - {Currency}"; }
         }
     }
 }

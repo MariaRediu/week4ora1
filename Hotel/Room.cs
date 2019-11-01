@@ -13,19 +13,14 @@ namespace Hotel
         public int Adults { get; set; }
         public int Children { get; set; }
         public Rate DailyRate { get; set; }
-
-        public void  GetPriceForDays(int numberOfDays)
+        public string  Print()
         {
-
-            Console.WriteLine($"Pentru numaul de zile {numberOfDays} pretul este: {DailyRate.Amount * numberOfDays} {DailyRate.Currency}");
-        
-
-    }
-    public void Print()
+            return $"Room:\n {Name} :Pret: {DailyRate.Print} - Adulti: {Adults} - Copii:{Children}";
+        }
+            
+        public decimal GetPriceForDays(int numberofdays)
         {
-            Console.WriteLine($"Nume={this.Name}- Rate={this.DailyRate}  Adults={this.Adults}  Children={this.Children}");
-
-            Console.ReadLine();
+            return numberofdays * DailyRate.Amount;
         }
 
     }

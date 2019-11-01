@@ -8,7 +8,31 @@ namespace Exercitiu5
 {
    public class PizzaTopping
     {
-        public string Name { get; set; } // Cheese, Meat, Vegetable
+        private string name = "Meat";
+        public string Name
+        {
+            get
+
+            {
+               
+
+                    return name.ToUpper();
+
+            }
+
+            set
+
+            {
+
+             //  if (value == "Meat")
+
+                    name = value;
+
+           
+                  
+
+            }
+        } // Cheese, Meat, Vegetable
         public int Cost { get; set; }
         public void Print()
         {
