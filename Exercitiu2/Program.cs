@@ -14,6 +14,7 @@ namespace Exercitiu2
 
             Student student1 = new Student();
 
+
             student1.Nume = "Ana";
             student1.Faculty = "AC";
             student1.Year = 1;

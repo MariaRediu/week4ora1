@@ -20,7 +20,7 @@ namespace Hotel
             camera.Name = "Camera_1";
             camera.Adults = 1;
             camera.Children = 2;
-            Console.WriteLine("Inter")
+           // Console.WriteLine("")
             
         }
     }

@@ -15,7 +15,7 @@ namespace Hotel
 
         public void GetPriceForNumberOfRooms(int numberOfRooms)
         {
-            Console.WriteLine($"Pentru numarul de camere {numberOfRooms} pretul este { GetPriceForDays()* numberOfRooms });
+            Console.WriteLine($"Pentru numarul de camere {numberOfRooms} pretul este { GetPriceForDays()* numberOfRooms }");
         }
         public void Print() {
             Console.WriteLine(($"Name={this.Name} City={this.City} List={this.ListOfRoom} ");
